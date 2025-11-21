@@ -1,11 +1,19 @@
 import React from "react";
+ // Create this CSS file
 
-function About() {
-    return (
-        <>
-    <h1>Hello from about pages</h1>
-   
-        </>
-    );
+function Home() {
+  return (
+    <div className="home-container">
+      <div className="home-content">
+        <h1>Welcome to Coffee Corner ☕</h1>
+        <p>Your perfect place to relax, sip, and enjoy delicious brews.</p>
+
+        <a href="/about" className="home-btn">
+          Explore More
+        </a>
+      </div>
+    </div>
+  );
 }
-export default About;
+
+export default Home;

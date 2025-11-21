@@ -1,0 +1,41 @@
+/* Footer container */
+.footer {
+  background-color: #4b2e2b; /* Dark coffee brown */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+  position: relative; /* For sticky footer option */
+  width: 100%;
+}
+
+/* Footer heading */
+.footer-content h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Footer text */
+.footer-content p {
+  margin: 5px 0 10px;
+  font-size: 14px;
+  color: #d4c5b9; /* lighter coffee color */
+}
+
+/* Social links container */
+.social-icons {
+  margin-top: 10px;
+}
+
+/* Social links */
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* H*

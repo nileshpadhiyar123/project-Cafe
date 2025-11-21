@@ -1,0 +1,68 @@
+.add-menu-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f7f1e9; /* coffee cream */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.add-menu-container h2 {
+  text-align: center;
+  color: #4b2e2b; /* dark coffee */
+  margin-bottom: 20px;
+}
+
+.add-menu-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-menu-container input[type="text"],
+.add-menu-container input[type="number"],
+.add-menu-container input[type="file"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcd3c0;
+  font-size: 16px;
+}
+
+.add-menu-container button {
+  padding: 10px;
+  background-color: #4b2e2b;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-menu-container button:hover {
+  background-color: #6a4f4b;
+}
+
+.add-menu-container ul {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.add-menu-container li {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.add-menu-container li img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}

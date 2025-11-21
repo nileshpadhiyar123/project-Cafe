@@ -1,0 +1,53 @@
+/* Header wrapper */
+.Header-logo {
+  background: #f7f1e9; /* Coffee cream color */
+  padding: 10px 20px;
+  
+  display: flex;
+  justify-content: space-between;  /* Logo left, nav right */
+  align-items: center;             /* Vertically aligned */
+  
+  border-bottom: 2px solid #e0d5c7;
+}
+
+/* Logo image */
+.Header-logo img {
+  height: 60px;
+  cursor: pointer;
+}
+
+/* Navigation bar container */
+.navbar {
+  background: #4b2e2b;  /* Dark coffee brown */
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation links */
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #b08968; /* Light coffee */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .navbar ul {
+    gap: 15px;
+  }
+}
