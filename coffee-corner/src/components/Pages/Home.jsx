@@ -3,7 +3,7 @@ import '../Pages/Home.css'
 import menu from '../../assets/images/menuicon.png'
 import track from '../../assets/images/trackorder.png'
 import reserv from '../../assets/images/reservation.png'
-import  Link  from 'react-router-dom'
+import  {Link}  from 'react-router-dom'
 function Home() {
   return (
     <div>
