@@ -1,0 +1,117 @@
+/* Theme matching login.css (works for .login-container and .auth-page) */
+:root{
+  --bg:#f7f3ef;
+  --card:#ffffff;
+  --accent:#6b4f2b;
+  --muted:#7a7a7a;
+  --radius:10px;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #fff 0%, #fcf9f6 50%, #f3efe8 100%);
+  color:#222;
+}
+
+/* Container used by login.jsx (.login-container) and register (.auth-page) */
+.login-container,
+.auth-page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 16px;
+}
+
+/* Card / form box */
+.login-form,
+.auth-form{
+  width:360px;
+  max-width:92%;
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:28px;
+  box-shadow:0 8px 24px rgba(43,35,28,0.08);
+  border:1px solid rgba(107,79,43,0.05);
+}
+
+/* Title */
+.login-container h1,
+.auth-page h2{
+  margin:0 0 18px 0;
+  text-align:center;
+  color:var(--accent);
+  font-weight:700;
+  letter-spacing:0.2px;
+}
+
+/* Inputs */
+.login-form input,
+.auth-form input{
+  width:100%;
+  padding:12px 14px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid #e6e0da;
+  background:#faf7f5;
+  font-size:14px;
+  outline:none;
+  transition:box-shadow .15s, border-color .15s;
+}
+.login-form input:focus,
+.auth-form input:focus{
+  border-color:var(--accent);
+  box-shadow:0 4px 12px rgba(107,79,43,0.06);
+}
+
+/* Button */
+.login-form button,
+.auth-form button{
+  width:100%;
+  margin-top:12px;
+  padding:12px 14px;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:15px;
+}
+.login-form button:disabled,
+.auth-form button:disabled{
+  opacity:0.7;
+  cursor:not-allowed;
+}
+
+/* Register / Login text link */
+.Register-text,
+.auth-page p{
+  margin-top:12px;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+.Register-text a,
+.auth-page a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.Register-text a:hover,
+.auth-page a:hover{ text-decoration:underline; }
+
+/* Small utilities */
+.error{
+  background:#fff0f0;
+  border:1px solid #f3c6c6;
+  color:#8a1f1f;
+  padding:10px;
+  border-radius:8px;
+  margin-bottom:10px;
+  font-size:13px;
+  text-align:center;
+}
