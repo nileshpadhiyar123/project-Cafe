@@ -1,6 +1,6 @@
 
 import Home from './components/Pages/Home.jsx'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import { HashRouter as Router,Routes,Route } from 'react-router-dom'
 import Header from './components/layout/Header.jsx'
 import About from './components/Pages/About.jsx'
 import Login from './components/Pages/login.jsx'
