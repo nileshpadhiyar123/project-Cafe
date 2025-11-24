@@ -5,7 +5,7 @@
   
   display: flex;
   justify-content: space-between;  /* Logo left, nav right */
-  align-items: center;             /* Vertically aligned */
+  align-items: left;             /* Vertically aligned */
   
   border-bottom: 2px solid #e0d5c7;
 }
