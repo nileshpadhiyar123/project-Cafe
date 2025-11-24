@@ -1,53 +1,61 @@
-/* Header wrapper */
+/* Make page take full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #f8f5f2; /* soft coffee background */
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER WRAPPER */
 .Header-logo {
-  background: #f7f1e9; /* Coffee cream color */
-  padding: 10px 20px;
-  
+  width: 150%;
+  background: #f7f1e9; /* Coffee cream */
+  padding: 12px 40px;
+
   display: flex;
-  justify-content: space-between;  /* Logo left, nav right */
-  align-items: left;             /* Vertically aligned */
-  
+  justify-content: space-between;   /* left = logo, right = nav */
+  align-items: center;
+
   border-bottom: 2px solid #e0d5c7;
+  box-sizing: border-box;
 }
 
 /* Logo image */
 .Header-logo img {
-  height: 60px;
+  height: 70px;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
-/* Navigation bar container */
+.Header-logo img:hover {
+  transform: scale(1.05);
+}
+
+/* NAVIGATION BAR */
 .navbar {
+  width:150%;
   background: #4b2e2b;  /* Dark coffee brown */
-  padding: 12px 20px;
+  padding: 16px 20px;
+
   display: flex;
-  justify-content: center;
+  justify-content:right;
+  box-sizing: border-box;
 }
 
 .navbar ul {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Navigation links */
 .navbar a {
   text-decoration: none;
   color: #fff;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: #b08968; /* Light coffee */
-}
-
-/* Responsive for smaller screens */
-@media (max-width: 600px) {
-  .navbar ul {
-    gap: 15px;
-  }
+  transition: color 0.3s, transform 0.2s;
 }

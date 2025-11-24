@@ -1,7 +1,7 @@
 import React from "react";
- // Create this CSS file
+import '../Pages/About.css'
 
-function Home() {
+function About() {
   return (
     <div className="home-container">
       <div className="home-content">
@@ -16,4 +16,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

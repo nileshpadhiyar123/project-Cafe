@@ -1,0 +1,118 @@
+/* Reset and body */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9; /* soft coffee background */
+}
+
+/* App layout */
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* full viewport height */
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #4b2e2b; /* dark coffee brown */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+.sidebar h2 {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #d2a679; /* light coffee */
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* prevent overflow */
+}
+
+/* Header */
+.header {
+  height: 60px;
+  background: #f7f1e9; /* coffee cream */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 2px solid #e0d5c7;
+  flex-shrink: 0;
+}
+
+/* Dashboard content */
+.content {
+  flex: 1; /* fill remaining space */
+  padding: 20px;
+  overflow-y: auto;
+  background: #f4f4f9; /* match page background */
+}
+
+/* Card styling */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* Full-page height for cards example */
+.card-full {
+  height: calc(100vh - 60px - 40px); /* header + padding */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .App {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  .sidebar a {
+    margin: 0 15px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+  .content {
+    padding: 10px;
+  }
+  .card {
+    padding: 15px;
+  }
+}

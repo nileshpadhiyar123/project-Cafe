@@ -1,36 +1,57 @@
-.add-menu-container {
-  max-width: 600px;
-  margin: 40px auto;
+/* Container centered horizontally and vertically */
+.add-menu-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full viewport height */
+  background: #f8f5f2; /* light coffee background */
   padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Inner form container */
+.add-menu-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 25px;
   background: #f7f1e9; /* coffee cream */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   font-family: 'Poppins', sans-serif;
+  text-align: center; /* center all text inside */
 }
 
+/* Heading */
 .add-menu-container h2 {
-  text-align: center;
   color: #4b2e2b; /* dark coffee */
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 28px;
 }
 
+/* Form styling */
 .add-menu-container form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: center; /* center inputs and button */
 }
 
 .add-menu-container input[type="text"],
 .add-menu-container input[type="number"],
 .add-menu-container input[type="file"] {
+  width: 100%;
+  max-width: 100%;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #dcd3c0;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
+/* Button */
 .add-menu-container button {
-  padding: 10px;
+  width: 50%;
+  padding: 12px;
   background-color: #4b2e2b;
   color: #fff;
   font-weight: 600;
@@ -44,8 +65,9 @@
   background-color: #6a4f4b;
 }
 
+/* List of menu items */
 .add-menu-container ul {
-  margin-top: 20px;
+  margin-top: 25px;
   list-style: none;
   padding: 0;
 }
@@ -58,6 +80,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  justify-content: center; /* center items inside li */
 }
 
 .add-menu-container li img {
