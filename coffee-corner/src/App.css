@@ -1,23 +1,41 @@
+/* Full-page layout */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa; /* light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main root container (centered full page) */
 #root {
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+/* Logo styling */
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 8em;           /* bigger logo for full page */
+  padding: 2em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Logo rotation animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +51,18 @@
   }
 }
 
+/* Card styling */
 .card {
+  margin: 2rem auto;
   padding: 2em;
+  max-width: 500px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
 }
 
+/* Footer text */
 .read-the-docs {
   color: #888;
+  font-size: 1.2rem;
 }

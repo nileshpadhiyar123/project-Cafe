@@ -18,6 +18,8 @@ function Header() {
                 <Link to="/addmenu">Addmenu</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/about">About</Link>
+                <Link to="/dash">Dashboard</Link>
+                
             </ul>
          </div>   
         </>

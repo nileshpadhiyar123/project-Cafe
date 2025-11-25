@@ -7,6 +7,8 @@ import Login from './components/Pages/login.jsx'
 import AddMenu from './components/Pages/Addmenu.jsx'
 import Footer from './components/layout/Footer1.jsx'
 import Register from './components/Pages/register.jsx'
+import Dashboard from './components/Pages/dashboard.jsx'
+
 function App() {
   
 
@@ -23,6 +25,8 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/addmenu' element={<AddMenu/>}/>
           <Route path='/register' element={ <Register/> }/>
+          <Route path='/dash' element={<Dashboard/>}/>
+        
         </Routes>
           <Footer/>
       </Router>
