@@ -8,7 +8,8 @@ import AddMenu from './components/Pages/Addmenu.jsx'
 import Footer from './components/layout/Footer1.jsx'
 import Register from './components/Pages/register.jsx'
 import Dashboard from './components/Pages/dashboard.jsx'
-
+import Updatemenu from './components/Pages/updatemenu.jsx'
+import ViewMenu from './components/Pages/viewmenu.jsx'
 function App() {
   
 
@@ -26,7 +27,8 @@ function App() {
           <Route path='/addmenu' element={<AddMenu/>}/>
           <Route path='/register' element={ <Register/> }/>
           <Route path='/dash' element={<Dashboard/>}/>
-        
+          <Route path='/updatemenu' element={<Updatemenu/>}/>
+          <Route path='/ViewMenu' element={<ViewMenu/>}/>
         </Routes>
           <Footer/>
       </Router>
