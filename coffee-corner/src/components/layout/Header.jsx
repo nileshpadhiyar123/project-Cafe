@@ -19,8 +19,9 @@ function Header() {
                 <Link to="/login">Login</Link>
                 <Link to="/about">About</Link>
                 <Link to="/dash">Dashboard</Link>
-                <Link TO="/updatemenu">Updatemenu</Link>
-                <Link TO="/ViewMenu">ViewMenu</Link>
+                <Link to="/updatemenu">Updatemenu</Link>
+                
+                <Link to="/man">Manage</Link>
                 
             </ul>
          </div>   

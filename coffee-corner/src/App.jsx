@@ -9,8 +9,8 @@ import Footer from './components/layout/Footer1.jsx'
 import Register from './components/Pages/register.jsx'
 import Dashboard from './components/Pages/dashboard.jsx'
 import Updatemenu from './components/Pages/updatemenu.jsx'
-import ViewMenu from './components/Pages/viewmenu.jsx'
 
+import Manage from './components/Pages/Manage.jsx'
 function App() {
   
 
@@ -29,8 +29,8 @@ function App() {
           <Route path='/register' element={ <Register/> }/>
           <Route path='/dash' element={<Dashboard/>}/>
           <Route path='/updatemenu' element={<Updatemenu/>}/>
-          <Route path='/ViewMenu' element={<ViewMenu/>}/>
-       
+         
+          <Route path="/man" element={<Manage/>}/>
         </Routes>
           <Footer/>
       </Router>

@@ -1,8 +1,11 @@
 {
   "name": "coffee-corner",
+  "homepage": "https://nileshpadhiyar123.github.io/project-Cafe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -28,4 +31,6 @@
     "globals": "^16.5.0",
     "vite": "^7.2.4"
   }
+  
 }
+
